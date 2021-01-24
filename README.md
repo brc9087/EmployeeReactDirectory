@@ -5,7 +5,7 @@
 * An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
 ## Usage / Directions
-* Click the link to find the Employee
+* Click the link to find the Employee https://brc9087.github.io/myapp/
 --
 ## Sorting Table by Name
 * ![](./public/images/NameSorted.JPG )
@@ -35,5 +35,5 @@
 * images
 
 ## Links
-* 
+* https://brc9087.github.io/myapp/
 * https://github.com/brc9087/EmployeeReactDirectory
