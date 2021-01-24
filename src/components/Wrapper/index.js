@@ -1,8 +1,12 @@
-import React from "react";
-import "./style.css";
+const styles = {
+  wrapperStyle: {
+    minHeight: "100%",
+    paddingBottom: "100px"
+  }
+}
 
 function Wrapper(props) {
-  return <main className="wrapper">{props.children}</main>;
+  return <main style={styles.wrapperStyle} className="wrapper">{props.children}</main>;
 }
 
 export default Wrapper;
