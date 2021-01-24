@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import DataAreaContext from "../../utils/DataAreaContext"
 import API from "../../utils/API";
 
+// set State of the values prior to rending. Best practice to place at the top
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
         users: [],
@@ -18,6 +19,7 @@ const DataArea = () => {
         ]
     });
 
+        // function to handle the sorting "descending / ascending"
     const handleSort = heading => {
         if (developerState.order === "descend") {
             setDeveloperState({
@@ -59,6 +61,7 @@ const DataArea = () => {
         });
     };
 
+    // function that handles any changes to the value of the search bar 
     const handleSearchChange = event => {
         const filter = event.target.value;
         const filteredList = developerState.users.filter(item => {
@@ -66,6 +69,7 @@ const DataArea = () => {
             return values.indexOf(filter.toLowerCase()) !== -1;
         });
 
+                // ...developer state get all previous states and updates them 
         setDeveloperState({
             ...developerState, filteredUsers: filteredList
         })

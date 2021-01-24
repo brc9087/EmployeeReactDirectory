@@ -4,18 +4,19 @@ import DataAreaContext from "../../utils/DataAreaContext";
 
 const styles = {
     dataTableStyles: {
-        // cursor: "pointer",
-        backgroundColor: "blue",
-        color: "white"
+        backgroundColor: "moccasin",
+        color: "black",
+        fontType: "bold"
     }
 }
 
+// uses the handleSort function from the DataArea folder to place results in ascending / descending order 
 const DataTable = () => {
     const context = useContext(DataAreaContext);
 
     return (
-        <div className="datatable mt-5">
-            <table
+        <div  style={styles.dataTableStyles} className="datatable mt-5">
+            <table style={styles.dataTableStyles}
                 id="table"
                 className="table table-striped table-hover table-condensed"
             >

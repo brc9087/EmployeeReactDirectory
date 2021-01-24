@@ -4,6 +4,7 @@ import DataAreaContext from "../../utils/DataAreaContext";
 const DataBody = () => {
     const context = useContext(DataAreaContext);
 
+    // function to format the API dates accordingly
     function formatDate(date) {
         const dateArray = date.split("-");
         const year = dateArray[0];
@@ -13,6 +14,9 @@ const DataBody = () => {
         const formattedDate = [month, day, year].join("-");
         return formattedDate;
     }
+
+    // prints out the requested results with parameters and puts then neatly in rows 
+    // also prints out with formatted date with the formatDate funnction 
     return (
         <tbody>
             {context.developerState.filteredUsers[0] !== undefined && context.developerState.filteredUsers[0].name !== undefined ? (
