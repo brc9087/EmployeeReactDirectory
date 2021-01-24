@@ -1,37 +1,39 @@
 # EmployeeReactDirectory
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+* This is an employee directory app with React. As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+* An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
 ## Usage / Directions
-* Click the link to fire up app and feel the burn! ==> https://boiling-cliffs-25283.herokuapp.com/
+* Click the link to find the Employee
 --
-## Add Excercise
-* ![](./images/addExcercise.JPG )
+## Sorting Table by Name
+* ![](./public/images/NameSorted.JPG )
 
 <br>
 
 ## Home Page 
-* ![](./images/index.JPG )
+* ![](./public/images/homePageEmployee.JPG )
 
 <br>
     
     
-## Stats Page
-*  ![](./images/statsPage.JPG )
+## Search for Employee
+*  ![](./public/images/SearchOption.JPG )
 
 <br>
 
 ## Tools Used / Dependancies
 --
-* node.js
-* api routes
-* mongoose
-* mongodb
-* express
+* React
+* API
+* state
+* React hooks
+* The Context API
 * Heroku
 * Github
 * images
 
 ## Links
-* https://boiling-cliffs-25283.herokuapp.com/
-* https://github.com/brc9087/WorkOutTrackerHW
+* 
+* https://github.com/brc9087/EmployeeReactDirectory
