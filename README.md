@@ -30,7 +30,7 @@
 * state
 * React hooks
 * The Context API
-* Heroku
+* JS
 * Github
 * images
 
