@@ -30,6 +30,7 @@ const DataArea = () => {
                 order: "descend"
             })
         }
+    
 
         const compareFnc = (a, b) => {
             if (developerState.order === "ascend") {
@@ -76,14 +77,22 @@ const DataArea = () => {
     };
 
     useEffect(() => {
-        API.getUsers().then(results => {
-            setDeveloperState({
-                ...developerState, users: results.data.results,
-                filteredUsers: results.data.results
-            });
-        });
+        // API.getUsers().then(results => {
+        //     setDeveloperState({
+        //         ...developerState, users: results.data.results,
+        //         filteredUsers: results.data.results
+        //     });
+        // });
+        getData();
+
     }, []);
 
+    const getData =async ()=>{
+        console.log("getData pinged")
+        const {data}= await API.getUsers()
+        console.log(data.results)
+        setDeveloperState({...developerState, users: data.results, filteredUsers:data.results})
+    }
     const styles = {
         dataAreaStyle: {
             margin: "0 auto",
